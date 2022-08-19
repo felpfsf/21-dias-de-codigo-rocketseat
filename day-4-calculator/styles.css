@@ -103,6 +103,7 @@ button {
 
 button:hover {
   background-color: #999966;
+  color: #fff;
 }
 
 .operator {
@@ -112,6 +113,7 @@ button:hover {
 .all-clear {
   color: #fff;
   background-color: #666600;
+
   border-color: #999966;
 }
 
@@ -133,6 +135,7 @@ button:hover {
 }
 
 .equal-sign:hover {
+  font-weight: 600;
   color: #524948;
 
   background-color: #f1f2b5;
