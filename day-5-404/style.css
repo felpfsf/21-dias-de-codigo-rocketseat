@@ -148,10 +148,11 @@ svg#freepik_stories-cat-astronaut.animated #freepik--Planet--inject-31 {
 
     flex-direction: column;
     overflow: hidden;
+    overflow-y: hidden;
   }
 
   .text {
-    margin-top: -.8rem;
+    margin-top: -1rem;
   }
 
   .text .title {
