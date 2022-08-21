@@ -98,3 +98,28 @@ body {
   text-align: center;
   transition: all ease 0.3s;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    background: url(images/background-mobile.png) no-repeat center;
+  }  
+
+  .glass-container {
+    margin-top: 40%;
+  }
+
+  .glass-container:hover {
+    height: 320px;
+    transform: initial;
+  }
+
+  .glass-container:focus {
+    height: 320px;
+  }
+
+  .glass-container:focus .content {
+    opacity: 1;
+    transition: all ease 0.3s;
+  }
+
+}
