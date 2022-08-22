@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Staatliches', cursive;
+  max-width: 960px;
+  height: auto;
+  margin-inline: auto;
+}
+
+.main {
+  font-size: clamp(2rem, 1.359rem + 2.735vw, 3rem);
+  /* margin-top: 10%; */
+  padding: 16px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+#countdown div {
+  width: 180px;
+
+  color: aliceblue;
+
+  background-color: #121212;
+
+  padding: 20px;
+
+  border: 1px solid;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#countdown div h2 {
+  font-size: clamp(3rem, 1.7179rem + 5.4701vw, 5rem);
+}
+#countdown div p {
+  font-size: clamp(1.5rem, 0.859rem + 2.735vw, 2.5rem);
+  font-weight: 300;
+}
