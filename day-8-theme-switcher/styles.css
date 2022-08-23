@@ -22,7 +22,6 @@ body {
 .dark {
   background-color: #121212;
   color: aliceblue;
-
 }
 
 .neon {
@@ -56,7 +55,6 @@ body {
 
 .title {
   font-size: clamp(3.6rem, 1.2885rem + 4.1026vw, 6rem);
-  color: #121212;
   transition: all ease-in-out 0.5s;
   border: 0.2rem transparent;
   padding: 0.4rem;
