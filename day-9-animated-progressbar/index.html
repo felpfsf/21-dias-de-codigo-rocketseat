@@ -4,14 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
     <script defer src="main.js"></script>
     <title>Day 9 - Animated Progress Bar</title>
   </head>
   <body>
+    <p class="message">Click on the button to start</p>
+
     <div class="meter animate">
       <span id="barra" style="width: 0%"></span>
     </div>
+
     <button id="clickBtn">Start</button>
+
+    <div class="goBack">
+      <i class="ph-arrow-u-down-left-bold"></i>
+      <a href="https://21-dias-de-codigo-rocketseat.vercel.app/">Go Back </a>
+    </div>
   </body>
 </html>
