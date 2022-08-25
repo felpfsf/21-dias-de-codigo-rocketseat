@@ -4,20 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script>
     <title>Day 10 - Particle JS</title>
   </head>
   <body>
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
-    <!-- stats - count particles -->
-    <!-- <div class="count-particles">
-      <span class="js-count-particles">--</span> particles
-    </div> -->
+    <div class="container">
+      <h1>Day #10 <br> <span>Particle Js</span></h1>
+      <div class="goBack">
+        <i class="ph-arrow-u-down-left-bold"></i>
+        <a href="https://21-dias-de-codigo-rocketseat.vercel.app/">Go Back </a>
+      </div>
+      <!-- particles.js container -->
+      <div id="particles-js"></div>
+      <!-- base -->
+      <div class="base"><img src="images/base.png" alt="" /></div>
+    </div>
+
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- stats.js lib -->
-    <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
   </body>
 </html>
