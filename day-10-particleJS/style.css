@@ -108,8 +108,10 @@ h1 > span {
 
 .base {
   position: absolute;
-  width: 420px;
-  top: 90%;
+  width: 300px;
+  top: 95%;
+
+  transform: scaleX(1.2);
 
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(10px 10px 5px #222);
@@ -127,8 +129,6 @@ h1 > span {
   }
 
   .base {
-    position: absolute;
-    width: 300px;
-    top: 90%;
+    width: 225px;
   }
 }
