@@ -1,60 +1,134 @@
 /* ---- reset ---- */
+
 body {
   margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
+  padding: 0;
+  font: normal 75% 'Poppins', sans-serif ;
+  color: #f1f1f1;
+  background-color: #115c55;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 canvas {
   display: block;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
+}
+
+.container {
+  position: relative;
+  top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.goBack a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.goBack {
+  position: relative;
+
+  font-size: 1rem;
+
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: reverse;
+  align-items: center;
+  gap: 4px;
+
+  cursor: pointer;
+}
+
+.goBack::before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 95%;
+  height: 2px;
+
+  border-radius: 4px;
+
+  background-color: rgba(240, 248, 255, 0.9);
+
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.goBack:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1 > span {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 8px 13px #f8f8f8, 0 2px 8px #999999, 0 2px 200px #909090;
+
 }
 
 /* ---- particles.js container ---- */
 #particles-js {
-  position: absolute;
-  /* left: 50%; */
-  /* right: 50%; */
+  width: 450px;
+  height: 450px;
 
-  width: 320px;
-  height: 320px;
+  margin-top: 2rem;
+
   border-radius: 100%;
-  border: 2px solid rgba(0, 128, 128, .5);
-  background-color: #90e3e7;
-  background-image: url('frosty-2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 45%;
-}
+  border: 2px solid #aef9ff;
 
-/* ---- stats.js ---- */
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13e8e9;
-  font-size: 0.8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-.js-count-particles {
-  font-size: 1.1em;
-}
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-#stats {
-  border-radius: 3px 3px 0 0;
+  background-color: #8cafab;
+  background-image: url('images/snow_globe.png');
+  background-repeat: no-repeat;
+  background-size: 270%;
+  background-position: center;
+
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(10px 10px 5px #222);
+
   overflow: hidden;
 }
-.count-particles {
-  border-radius: 0 0 3px 3px;
+
+.base {
+  position: absolute;
+  width: 420px;
+  top: 90%;
+
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(10px 10px 5px #222);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  .container {
+    top: 15px;
+  }  
+  #particles-js {
+    width: 320px;
+    height: 320px;
+  }
+
+  .base {
+    position: absolute;
+    width: 300px;
+    top: 90%;
+  }
 }
