@@ -72,6 +72,7 @@ body {
 /* ---- Login Form ---- */
 
 .login--form {
+  /* width: 100%; */
   margin-top: 3.6rem;
 
   display: flex;
@@ -153,7 +154,7 @@ body {
   color: var(--clr-primary-main);
 }
 
-/* ---- Retangulo ---- */
+/* ---- Rectangle ---- */
 
 .rectangle {
   position: absolute;
@@ -194,10 +195,21 @@ body {
   height: 59rem;
 }
 
+/* ---- 480px ---- */
+
 @media screen and (max-width: 480px) {
   .login-container {
     padding-top: 25%;
   }
+
+  .login--form {
+    align-items: center;
+  }
+
+  .login--form input {
+    width: 32rem;
+  }
+
   .rectangle {
     z-index: -1;
     left: 10rem;
@@ -206,15 +218,19 @@ body {
     transform: rotate(135deg) scale(0.8);
     opacity: 0.8;
   }
+
   .image-container {
     display: none;
   }
 }
 
+/* ---- Medium Screens ---- */
+
 @media screen and (min-width: 480px) and (max-width: 1279px) {
   .login-container {
     padding-top: 25%;
   }
+
   .rectangle {
     z-index: -1;
     left: 50rem;
@@ -223,10 +239,13 @@ body {
     transform: rotate(135deg);
     opacity: 0.8;
   }
+
   .image-container {
     display: none;
   }
 }
+
+/* ---- Desktop Medium ----*/
 
 @media screen and (min-width: 1280px) and (max-width: 1139px) {
   .image-container img {
