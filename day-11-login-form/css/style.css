@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --ffamily: 'Poppins', sans-serif;
+  --ffamily2: 'Inter', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: var(--ffamily2);
+  background-color: beige;
+}
+
+.wrapper {
+  /* max-width: 1140px; */
+  width: 100%;
+  height: 100vh;
+  margin-inline: auto;
+  display: flex;
+  gap: ;
+}
+
+.login-container {
+  width: 100%;
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login--form label {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.login--form input {
+  font-family: var(--ffamily2);
+  margin-top: 1.2rem;
+  width: 36rem;
+  padding: .4rem;
+  border-radius: 2.5rem;
+}
+
+
+.login--form button {
+  font-family: var(--ffamily2);
+  width: 100%;
+  margin-top: 4.2rem;
+  padding: .7rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+}
+
+.login-container h3{
+  margin-top: 5.4rem;
+}
+
+.social--links {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.social--links li a i{
+  font-size: 3.2rem;
+}
+
+.image-container {
+  position: relative;
+  width: 75%;
+  padding-top: 25%;
+  background-color: aquamarine;
+}
+
+.image-container img {
+  position: absolute;
+  left: -25rem;
+  top: 18rem;
+  width: 60rem;  
+  height: 59rem;  
+}
