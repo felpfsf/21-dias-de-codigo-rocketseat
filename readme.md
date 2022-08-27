@@ -25,8 +25,8 @@ It's not a contest but a challenge to make yourself acquire the habit to code ev
 - [x] [#08 - Toggle dark mode](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/day-8-theme-switcher)
 - [x] [#09 - Progress Bar animation](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/day-9-animated-progressbar)
 - [x] [#10 - Particle.js lib](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/day-10-particleJS)
-- [ ] [#11 - Form Layout](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/day-11-login-form)
-- [ ] #12 - Image Galery
+- [x] [#11 - Form Layout](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/day-11-login-form)
+- [ ] [#12 - Image Galery](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/day-12-image-gallery)
 - [ ] #13 - Responsive menu
 - [ ] #14 - Quiz
 
