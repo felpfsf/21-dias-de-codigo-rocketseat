@@ -5,7 +5,10 @@
 }
 
 :root {
-  --clr-background: #232223;
+  --clr-background: #000;
+
+  --ffamily-title: 'Aboreto', cursive;
+  --ffamily-body: 'Poppins', sans-serif;
 }
 
 img {
@@ -13,23 +16,81 @@ img {
   height: 100%;
 }
 
-body {
-  font-family: sans-serif;
-  color: #f1f1f1;
-  background-color: var(--clr-background);
+h2,
+h3 {
+  font-family: var(--ffamily-title);
+}
 
+body {
+  font-family: var(--ffamily-body);
+  color: #f1f1f1;
+
+  background-color: var(--clr-background);
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.overlay {
+  position: absolute;
+  z-index: 0;
+  background-color: var(--clr-background);
+  /* opacity: .3; */
+}
+
 .page-title {
   font-size: 56px;
   font-weight: 300;
+  text-align: center;
   letter-spacing: 10px;
 
   margin-top: 100px;
+}
+
+.goBack a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.goBack {
+  position: relative;
+
+  font-size: 1rem;
+
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: reverse;
+  align-items: center;
+  gap: 4px;
+
+  cursor: pointer;
+}
+
+.goBack::before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 95%;
+  height: 2px;
+
+  border-radius: 4px;
+
+  background-color: rgba(240, 248, 255, 0.9);
+
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.goBack:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .gallery {
@@ -46,13 +107,15 @@ body {
 .card {
   position: relative;
 
-  width: 400px;
-  height: 600px;
+  width: 380px;
+  height: 580px;
 
   margin: 10px;
 
   background-size: cover;
   background-color: rgba(209, 132, 32, 0.1);
+
+  border-radius: 50px;
 
   overflow: hidden;
 
@@ -118,6 +181,7 @@ body {
 /* ---- Hover Effect ---- */
 
 .card:hover {
+  box-shadow: 0px 35px 75px -15px rgba(150, 115, 2, 0.6);
   transform: scale(1.05);
 }
 
@@ -133,4 +197,9 @@ body {
   transform: translateX(0);
 }
 
-/* @media */
+@media screen and (max-width: 1000px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
