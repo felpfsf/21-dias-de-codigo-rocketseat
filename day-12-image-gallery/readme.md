@@ -6,4 +6,4 @@ Create an Image Gallery
 
 ## Demonstration
 
-![image]()
+![image](images/ezgif.com-gif-maker.mp4)
