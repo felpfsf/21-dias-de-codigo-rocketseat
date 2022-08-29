@@ -28,7 +28,7 @@ body {
   color: aliceblue;
   /* background: #000
     url(https://www.myfreewalls.com/public/uploads/preview/hd-dark-abstract-gaming-color-mobile-wallpaper-11631140632fnxjwka8sf.jpg); */
-  background: #000 url(wallpaperbetter.jpg);
+  background: #000 url(../images/wallpaperbetter.jpg);
   background-size: cover;
 
   overflow-x: hidden;
