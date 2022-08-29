@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Poppins', sans-serif;
+
+  padding-top: 15%;
+
+  background: url(images/background-fhd.jpg) no-repeat;
+  background-attachment: fixed;
+}
+
+.glass-container {
+  width: 100%;
+  max-width: 320px;
+  height: 250px;
+
+  padding: 8px;
+
+  margin-inline: auto;
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+
+  transition: all ease 0.3s;
+}
+
+.glass-container:hover {
+  height: 320px;
+  transform: scale(1.5);
+}
+
+.glass-container:hover .content {
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+
+.avatar {
+  width: 8rem;
+  height: 8rem;
+
+  margin-block: 8px;
+
+  border-radius: 100%;
+}
+
+.content {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: all ease 0.3s;
+}
+
+.content p {
+  font-weight: 300;
+}
+
+.btn-login {
+  margin-top: 8px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+
+  width: 120px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.4);
+  
+  padding: 4px;
+  
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.message {
+  font-size: 14px;
+  text-align: center;
+  transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: url(images/background-mobile.png) no-repeat center;
+  }  
+
+  .glass-container {
+    margin-top: 40%;
+  }
+
+  .glass-container:hover {
+    height: 320px;
+    transform: initial;
+  }
+
+  .glass-container:focus {
+    height: 320px;
+  }
+
+  .glass-container:focus .content {
+    opacity: 1;
+    transition: all ease 0.3s;
+  }
+
+}
