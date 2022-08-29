@@ -6,6 +6,8 @@
 
 :root {
   font-size: 10px;
+  --ff-poppins: 'Poppins';
+  --ff-inter: 'Inter';
 }
 
 a {
@@ -24,7 +26,7 @@ ul {
 body {
   width: 100vw;
   font-size: 1.6rem;
-  font-family: sans-serif;
+  font-family: var(--ff-poppins);
   color: aliceblue;
   /* background: #000
     url(https://www.myfreewalls.com/public/uploads/preview/hd-dark-abstract-gaming-color-mobile-wallpaper-11631140632fnxjwka8sf.jpg); */
@@ -77,6 +79,7 @@ header {
 }
 
 .nav-menu li {
+  color: azure;
   margin: 2.4rem;
   margin-right: 4rem;
   cursor: pointer;
@@ -103,41 +106,34 @@ header {
 }
 
 /*  */
-.content {
-  margin: 2rem;
+.main {
+  max-width: 114rem;
+  padding: 2rem;
+  margin-inline: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-}
-
-.cards {
-  margin: 2rem;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
 }
 
 .card {
-  width: 24rem;
+  width: 100%;
+  max-width: 90%;
   padding: 2rem;
-  aspect-ratio: 1;
 
-  border: 1px solid;
+  margin-top: 10rem;
+
+  border: 1px solid hsl(271 76% 53% / 0.8);
   border-radius: 2rem;
-  /* display: flex;
-  flex-direction: column;
-  gap: 2rem; */
+  box-shadow: 0 0 0.7rem #fff, 0 0 0.5rem #fff, 0 0 0.5rem #fff,
+    0 0 1rem #bc13fe, 0 0 2rem #bc13fe, 0 0 1rem #bc13fe, 0 0 1rem #bc13fe,
+    0 0 2rem #bc13fe;
+
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 1fr 2rem;
   row-gap: 1.6rem;
-  /* place-content: center; */
 }
 
 .card p {
-  /* margin-top: 2rem; */
-  /* margin-bottom: 2rem; */
+  font-family: var(--ff-inter);
 }
 
 .footer-card {
@@ -149,7 +145,7 @@ header {
   color: #bc13fe;
   font-weight: bold;
   filter: brightness(1.3);
-  transition: all ease-in .3s;
+  transition: all ease-in 0.3s;
 }
 
 .card a:hover {
@@ -179,7 +175,7 @@ header {
   }
 
   .nav-menu li {
-    padding: 1.6rem;
+    padding: 1rem;
   }
 
   .mobile-toggle {
