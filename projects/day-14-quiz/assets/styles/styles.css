@@ -42,6 +42,11 @@ body {
   padding: 2rem;
 }
 
+.main--title {
+  font-size: 3rem;
+  text-align: center;
+}
+
 /* Scoreboard container */
 .scoreboard {
   text-align: center;
@@ -188,4 +193,34 @@ body {
 .wrong-answ {
   background-color: var(--clr-wrong-answ) !important; 
   color: var(--clr-text) !important; 
+}
+
+
+@media (max-width: 768px) {
+  .scoreboard {
+    width: 33rem;
+  }
+
+  .quiz {
+    width: 33rem;
+    aspect-ratio: 32 / 10;
+  }
+
+  #question {
+    font-size: 2rem;
+  }
+
+  .answers button {
+    font-size: 1.6rem;
+
+    width: 100%;
+    height: 4rem;
+  
+    margin: 1.5rem 0;
+    padding: .8rem;
+  }
+
+  #answ-letter {
+    font-size: 2rem;
+  }
 }
