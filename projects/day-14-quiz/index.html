@@ -21,13 +21,15 @@
     <section class="main">
       <h1 class="main--title">Quiz</h1>
       <!-- Scoreboard -->
-      <div class="scoreboard">
+      <div class="scoreboard hidden">
         <h1 class="scoreboard--message">Parabéns</h1>
-        <p class="scoreboard--display"><strong><span>100</span>%</strong></p>
-        <p><em>
-          Você acertou <span id="scoreboard--correct-answ"><strong>5</strong></span> de
-          <span id="scoreboard--total-questions"><strong>5</strong></span> questões
-        </em></p>
+        <p class="scoreboard--display"><span>100</span>%</p>
+        <p>
+          <em>
+            Você acertou <span id="scoreboard--correct-answ">5</span> de
+            <span id="scoreboard--total-questions">5</span> questões
+          </em>
+        </p>
         <button id="restart">Reiniciar</button>
       </div>
       <!-- Quiz -->
@@ -58,12 +60,9 @@
       </div>
     </section>
     <!-- Answer Template -->
-    <div class="answers-template hidden">
-      <button>
-        <span id="answ-letter">A</span>
-        <span id="answ-text">Marmitech!</span>
-      </button>
-    </div>
-  </div>
+    <button class="answers-template hidden">
+      <span id="answ-letter">A</span>
+      <span id="answ-text">Marmitech!</span>
+    </button>
   </body>
 </html>

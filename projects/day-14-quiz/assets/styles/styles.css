@@ -72,16 +72,19 @@ body {
 
 .scoreboard p {
   font-size: 1.8rem;
+  font-weight: 300;
   margin: 2rem auto;
 }
 
 .scoreboard .scoreboard--display {
   font-size: 3.2rem;
+  font-weight: 700;
 }
 
 #scoreboard--correct-answ,
 #scoreboard--total-questions {
   font-size: 2rem;
+  font-weight: 700;
 }
 
 #restart {

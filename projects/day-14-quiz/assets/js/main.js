@@ -45,7 +45,7 @@ function createQuestion(i) {
 
     answersDiv.appendChild(answTemplate)
 
-    answTemplate.addEventListener('click', () => {
+    answTemplate.addEventListener('click', function () {
       checkAnswer(this)
     })
   })
@@ -60,6 +60,7 @@ function checkAnswer(btn) {
       button.classList.add('correct-answ')
       if (btn === button) {
         points++
+        console.log(points);
       }
     } else {
       button.classList.add('wrong-answ')
@@ -80,19 +81,32 @@ function nextQuestion() {
 
 function endGame() {
   showScore()
+
   const score = ((points / questions.length) * 100).toFixed(0)
 
-  const displayScore = scoreboard.querySelector('scoreboard--display span')
+  const displayScore = scoreboard.querySelector('.scoreboard--display span')
 
   displayScore.textContent = score.toString()
 
-  const correctAnsw = document.querySelector('#scoreboard-correct-answ')
+  const correctAnsw = document.querySelector('#scoreboard--correct-answ')
   correctAnsw.textContent = points
 
   const totalQuestions = document.querySelector('#scoreboard--total-questions')
   totalQuestions.textContent = questions.length
 
   // To do message
+  const message = document.querySelector('.scoreboard--message')
+  if(score < 20) {
+    message.textContent = 'Mandou mal :('
+  } else if(score > 20 && score < 60) {
+    message.textContent = 'Precisa melhorar'
+  } else if (score > 60 && score < 80) {
+    message.textContent = 'Quase lá, foi bem'
+  } else if (score > 80 && score < 99) {
+    message.textContent = 'Mestre!!!!'
+  } else {
+    message.textContent = 'Parabéns Marmiteiro'
+  }
 }
 
 function showScore() {
