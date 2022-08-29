@@ -28,7 +28,17 @@ It's not a contest but a challenge to make yourself acquire the habit to code ev
 - [x] [#11 - Form Layout](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-11-login-form)
 - [x] [#12 - Image Galery](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-12-image-gallery)
 - [x] [#13 - Responsive menu](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-13-responsive-menu)
-- [ ] #14 - Quiz
+- [x] [#14 - Quiz](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-14-quiz/)
+
+### Third Week
+
+- [ ] [#15]()
+- [ ] [#16]()
+- [ ] [#17]()
+- [ ] [#18]()
+- [ ] [#19]()
+- [ ] [#20]()
+- [ ] [#21]()
 
 ## Hashtags
 
