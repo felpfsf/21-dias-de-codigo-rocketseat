@@ -1,13 +1,13 @@
 export const questions = [
   {
-    question: 'Qual bicho transmite Doença de Chagas?',
+    question: '" [+false]+[+false]+[+false]-[+false] "',
     answers: [
       {
-        answer: 'Abelha',
+        answer: 'Oi...como vim parar aqui',
         correct: false
       },
       {
-        answer: 'Barata',
+        answer: '🤔 ',
         correct: false
       },
       {
@@ -15,91 +15,87 @@ export const questions = [
         correct: false
       },
       {
-        answer: 'Barbeiro',
+        answer: '0',
         correct: true
       }
     ]
   },
   {
-    question: 'Qual fruto é conhecido no Norte e Nordeste como "jerimum"?',
+    question: 'React é uma ...',
     answers: [
       {
-        answer: 'Caju',
+        answer: 'Framework',
         correct: false
       },
       {
-        answer: 'Abóbora',
+        answer: 'lib',
         correct: true
       },
       {
-        answer: 'Chuchu',
-        correct: false
-      },
-      {
-        answer: 'Côco',
+        answer: 'e lá vamos nós',
         correct: false
       }
     ]
   },
   {
-    question: 'Qual é o coletivo de cães?',
+    question: 'Este é Pedro. Ele usa Javascript no backend. Pedro é...',
     answers: [
       {
-        answer: 'Matilha',
+        answer: 'Um cara sensato',
         correct: true
       },
       {
-        answer: 'Rebanho',
+        answer: 'Um brincalhão',
         correct: false
       },
       {
-        answer: 'Alcateia',
+        answer: 'Pare, você não pode fazer isso - Javeiros',
         correct: false
       },
       {
-        answer: 'Manada',
+        answer: 'Integrante de uma quadrilha perigosa',
         correct: false
       }
     ]
   },
   {
-    question: 'Qual é o triângulo que tem todos os lados diferentes?',
+    question: "('b'+'a'+ +'a'+'a').toLowerCase()",
     answers: [
       {
-        answer: 'Equilátero',
+        answer: 'baaa',
         correct: false
       },
       {
-        answer: 'Isóceles',
-        correct: false
-      },
-      {
-        answer: 'Escaleno',
+        answer: 'banana',
         correct: true
       },
       {
-        answer: 'Trapézio',
+        answer: 'sabia essa com feijões',
+        correct: false
+      },
+      {
+        answer: 'What the...',
         correct: false
       }
     ]
   },
   {
-    question: 'Quem compôs o Hino da Independência?',
+    question: 'Melhor programa no horário de almoço é',
     answers: [
       {
-        answer: 'Dom Pedro I.',
+        answer: 'Dormir',
+        correct: false
+      },
+      {
+        answer: 'Procrastinar',
+        correct: false
+      },
+      {
+        answer: 'Marmitech com a Jake',
         correct: true
       },
       {
-        answer: 'Manuel Bandeira',
-        correct: false
-      },
-      {
-        answer: 'Castro Alves',
-        correct: false
-      },
-      {
-        answer: 'Carlos Gomes',
+        answer: 'Almoçar...óbvio',
         correct: false
       }
     ]
