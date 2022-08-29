@@ -6,4 +6,4 @@ Create a Responsive Menu
 
 ## Demonstration
 
-![image]()
+![image](responsive-menu-demo.gif)
