@@ -1,19 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet"
-  />
-  <title>Day 15 - E-Comerce</title>
-</head>
-<body>
-  <h1>E-Comerce</h1>  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Day 15 - E-Comerce</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"><h1>Logo</h1></a>
+      <div class="search">
+        <input
+          type="text"
+          class="input-search"
+          placeholder="Search something"
+        />
+        <span class="material-symbols-outlined search-icon"> search </span>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="overlay"></div>
+      <img src="images/Hero.png" alt="" />
+      <div class="cta">
+        <h1>Lorem, ipsum.</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <button>CTA</button>
+      </div>
+    </section>
+    <section class="sect-products">
+      <!-- StarWars -->
+      <div class="prod-starwars">
+        <div class="products--heading">
+          <h2>Star Wars</h2>
+          <a href="#">
+            More
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </div>
+        <div class="products--cards">
+          <!-- Product #1 -->
+          <div class="card">
+            <img src="images/sw-01.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #2 -->
+          <div class="card">
+            <img src="images/sw-02.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #3 -->
+          <div class="card">
+            <img src="images/sw-03.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #4 -->
+          <div class="card">
+            <img src="images/sw-04.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #5 -->
+          <div class="card">
+            <img src="images/sw-05.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #6 -->
+          <div class="card">
+            <img src="images/sw-06.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consoles -->
+      <div class="prod-consoles">
+        <div class="products--heading">
+          <h2>Games</h2>
+          <a href="#">
+            Ver tudo
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </div>
+        <div class="products--cards">
+          <!-- Product #1 -->
+          <div class="card">
+            <img src="images/games-01.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #2 -->
+          <div class="card">
+            <img src="images/games-02.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #3 -->
+          <div class="card">
+            <img src="images/games-03.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #4 -->
+          <div class="card">
+            <img src="images/games-04.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #5 -->
+          <div class="card">
+            <img src="images/games-05.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #6 -->
+          <div class="card">
+            <img src="images/games-06.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diversos -->
+      <div class="prod-sorts">
+        <div class="products--heading">
+          <h2>Sort</h2>
+          <a href="#">
+            Ver tudo
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </div>
+        <div class="products--cards">
+          <!-- Product #1 -->
+          <div class="card">
+            <img src="images/sorts-01.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #2 -->
+          <div class="card">
+            <img src="images/sorts-02.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #3 -->
+          <div class="card">
+            <img src="images/sorts-03.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #4 -->
+          <div class="card">
+            <img src="images/sorts-04.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #5 -->
+          <div class="card">
+            <img src="images/sorts-05.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+          <!-- Product #6 -->
+          <div class="card">
+            <img src="images/sorts-06.png" alt="" />
+            <div class="card--info">
+              <h3 class="prod-name">Product #</h3>
+              <p class="prod-price"><strong>R$ 60, 00</strong></p>
+              <a class="prod-link" href="#">More info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- <div> -->
+        <div class="list">
+          <a href="#"><h1>Logo</h1></a>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Privacy Politics</a></li>
+            <li><a href="#">Fidelity Program</a></li>
+            <li><a href="#">Our Stores</a></li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <fieldset>
+            <legend>Contact Us</legend>
+            <input type="text" placeholder="Enter your name" />
+            <textarea placeholder="Type your message"></textarea>
+            <button>Submit</button>
+          </fieldset>
+        </form>
+      <!-- </div> -->
+
+    </footer>
+    <div class="attribuition">
+      <h3>Developed by <a href="#">Felipe F.</a></h3>
+      <h4>2022 - Rocketseat #21diasdecodigo</h4>
+    </div>
+  </body>
 </html>
