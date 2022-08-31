@@ -233,3 +233,21 @@ body {
   left: 4.5rem;
   font-size: 2.4rem;
 }
+
+.attribuition {
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: var(--fontfamily-heading);
+  text-align: center;
+
+  padding-block: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.attribuition a {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
