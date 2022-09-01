@@ -84,9 +84,9 @@ body {
   margin: 2rem auto;
   padding: 2rem;
 
-  border: .1rem solid aliceblue;
+  /* border: .1rem solid aliceblue; */
   border-radius: 2rem;
-  background: hsl(271 76% 53% / 0.2);
+  background: hsl(271 76% 53% / 0.1);
   backdrop-filter: blur(15px);
 
   display: grid;
