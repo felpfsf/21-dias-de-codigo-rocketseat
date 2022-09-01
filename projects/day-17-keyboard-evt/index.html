@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="main.js"></script>
-  <title>Day 17 - Keyboard Events</title>
-</head>
-<body>
-  <h1>Keyboard</h1>
-  <div class="key"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+    <title>Day 17 - Keyboard Events</title>
+  </head>
+  <body>
+    <section class="main">
+      <h1>Keyboard</h1>
+      <div class="teclas">
+        <div data-key="keyq" class="tecla q">Q</div>
+        <div data-key="keyw" class="tecla w">W</div>
+        <div data-key="keye" class="tecla e">E</div>
+        <div data-key="keya" class="tecla a">A</div>
+        <div data-key="keys" class="tecla s">S</div>
+        <div data-key="keyd" class="tecla d">D</div>
+        <div data-key="keyz" class="tecla z">Z</div>
+        <div data-key="keyx" class="tecla x">X</div>
+        <div data-key="keyc" class="tecla c">C</div>
+        <div data-key="space" class="tecla space">Space</div>
+      </div>
+    </section>
+
+    <audio src="./assets/sounds/keyq.wav" id="s_keyq"></audio>
+    <audio src="./assets/sounds/keyw.wav" id="s_keyw"></audio>
+    <audio src="./assets/sounds/keye.wav" id="s_keye"></audio>
+    <audio src="./assets/sounds/keya.wav" id="s_keya"></audio>
+    <audio src="./assets/sounds/keys.wav" id="s_keys"></audio>
+    <audio src="./assets/sounds/keyd.wav" id="s_keyd"></audio>
+    <audio src="./assets/sounds/keyz.wav" id="s_keyz"></audio>
+    <audio src="./assets/sounds/keyx.wav" id="s_keyx"></audio>
+    <audio src="./assets/sounds/keyc.wav" id="s_keyc"></audio>
+    <audio src="./assets/sounds/keyspace.wav" id="s_space"></audio>
+  </body>
 </html>
