@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  --ffamily-main: 'Poppins';
+  --ffamily-paragraph: 'Inter';
+
+  --clr-font-main: hsl(208, 100%, 97%);
+  --clr-hover: hsl(271, 76%, 53%);
+  --clr-neon: #bc13fe;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--clr-font-main);
+  font-family: var(--ffamily-main);
+  background: #000 url(../assets/images/wallpaperbetter.jpg);
+  background-size: cover;
+}
+
+.main {
+  max-width: 114rem;
+  min-width: 35rem;
+  width: 100%;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main h1 {
+  font-size: 4rem;  
+}
+
+.teclas {
+  max-width: 45rem;
+  min-width: 35rem;
+
+  margin: 2rem auto;
+  padding: 2rem;
+
+  border: 1px solid aliceblue;
+  border-radius: 2rem;
+  background: hsl(271 76% 53% / 0.2);
+  backdrop-filter: blur(15px)
+;
+    
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "q w e"
+    "a s d"
+    "z x c"
+    "space space space"
+  ;
+  justify-items: center;
+  gap: 1.6rem;
+}
+
+.tecla {
+  width: 8rem;
+  aspect-ratio: 1;
+
+  font-size: 2rem;
+
+  border: .1rem solid var(--clr-font-main);
+  border-radius: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.q{ grid-area: q;}
+.w{ grid-area: w;}
+.e{ grid-area: e;}
+.a{ grid-area: a;}
+.s{ grid-area: s;}
+.d{ grid-area: d;}
+.z{ grid-area: z;}
+.x{ grid-area: x;}
+.c{ grid-area: c;}
+
+.space{ 
+  width: 85%;
+  height: 8rem;
+  aspect-ratio: 0;
+  grid-area: space;
+}
+
+.tecla.active {
+  border: .2rem solid yellow;
+  color: #ff0;
+}
