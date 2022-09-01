@@ -32,9 +32,9 @@ It's not a contest but a challenge to make yourself acquire the habit to code ev
 
 ### Third Week
 
-- [ ] [#15]()
-- [ ] [#16]()
-- [ ] [#17]()
+- [x] [#15](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-15-ecomerce/)
+- [x] [#16](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-16-api/)
+- [x] [#17](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-17-keyboard-evt/)
 - [ ] [#18]()
 - [ ] [#19]()
 - [ ] [#20]()
