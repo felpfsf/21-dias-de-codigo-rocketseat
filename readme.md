@@ -32,10 +32,10 @@ It's not a contest but a challenge to make yourself acquire the habit to code ev
 
 ### Third Week
 
-- [x] [#15](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-15-ecomerce/)
-- [x] [#16](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-16-api/)
-- [x] [#17](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-17-keyboard-evt/)
-- [ ] [#18]()
+- [x] [#15 - Create an e-commerce landing page](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-15-ecomerce/)
+- [x] [#16 - Create an web application consuming a public API](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-16-api/)
+- [x] [#17 - Create a application that captures keyboards events and show it on screen ](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-17-keyboard-evt/)
+- [ ] [#18 - Create an application that generates random passwords](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-18-password-gen/)
 - [ ] [#19]()
 - [ ] [#20]()
 - [ ] [#21]()
