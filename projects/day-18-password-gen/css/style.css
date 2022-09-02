@@ -82,12 +82,14 @@ body {
   font-size: 4rem;
 }
 
-/*  */
+/* Button */
+
 .btn-genpass {
   color: inherit;
   font-family: inherit;
+  font-size: 2rem;
 
-  width: 16rem;
+  width: 24rem;
   height: 4rem;
 
   border-radius: 2.5rem;
@@ -128,7 +130,6 @@ body {
   justify-content: center;
 }
 
-
 .output-container span {
   position: absolute;
   top: 2.5rem;
@@ -142,6 +143,8 @@ body {
     0 0 4.2rem #bc13fe, 0 0 8.2rem #bc13fe, 0 0 9.2rem #bc13fe,
     0 0 10rem #bc13fe, 0 0 15rem #bc13fe;
 }
+
+/* Spin Loader */
 
 .loader {
   position: absolute;
