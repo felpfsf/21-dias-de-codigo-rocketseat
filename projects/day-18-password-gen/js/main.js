@@ -1,9 +1,12 @@
-const pswDivElem = document.querySelector('#pswOutput')
-const btnGenPass = document.querySelector('#btn-genpass')
+const pswOutputElem = document.querySelector('#pswOutput')
 
-btnGenPass.addEventListener('click', () => {
-  genPassword()
-})
+const btnGenPass = document.querySelector('#btnGenpass')
+
+const btnCopy = document.querySelector('#btnCopy')
+
+btnCopy.addEventListener('click', copyPass)
+
+btnGenPass.addEventListener('click', genPassword)
 
 function genPassword() {
   let characters =
@@ -16,6 +19,12 @@ function genPassword() {
     console.log(rdnNum)
     psw += characters.substring(rdnNum, rdnNum + 1)
   }
-  pswDivElem.innerHTML = `<p>${psw}</p>`
+  pswOutputElem.textContent = psw
   console.log(psw)
+}
+
+function copyPass() {
+  let pswToBeCopied = pswOutputElem.textContent
+  console.log(pswToBeCopied)
+  navigator.clipboard.writeText(pswToBeCopied)
 }
