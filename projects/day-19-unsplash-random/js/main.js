@@ -1,5 +1,5 @@
 const btnGenRandom = document.querySelectorAll('.btnGenImg')
-const imgContainer = document.querySelector('.image-container')
+const imgContainer = document.querySelector('.image-display')
 
 const URL_RANDOM = 'https://source.unsplash.com/random/500x500/'
 
@@ -15,8 +15,10 @@ function renderImg(attr) {
   fetch(`${URL_RANDOM}?${attr}`)
     .then(response => {
       const fetchedImage = response.url
-      console.log(fetchedImage);
-      imgContainer.innerHTML = `<img src="${fetchedImage}">`
+      console.log(fetchedImage)
+      imgContainer.innerHTML = `
+        <img class="fetched-image" src="${fetchedImage}" alt="${attr}">
+      `
     })
     .catch(err => console.log(`Error: ${err}`))
 }

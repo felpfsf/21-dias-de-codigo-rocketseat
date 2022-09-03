@@ -23,22 +23,24 @@
     <title>Day 19 - Unsplash Random Images</title>
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header">
       <a class="logo" href="https://21-dias-de-codigo-rocketseat.vercel.app/">
         <span class="material-symbols-outlined rocket"> rocket </span>
-        <h1>Rocket<span>Pass</span></h1>
+        <h1>Rocket<span>Img</span></h1>
       </a>
     </header>
+    <!-- Main Section -->
     <section class="main">
       <h1>Unsplash Random Images</h1>
-      <h2>Choose your category:</h2>
-      <!-- <button id="btnGenImg">Generate</button> -->
+      <h2>Pick your category:</h2>
+      <!-- Buttons Div -->
       <div class="button-container">
         <input
           type="button"
           id="btnGenImg"
           class="btnGenImg"
-          data-key="console"
+          data-key="game"
           value="Games"
         />
         <input
@@ -64,15 +66,26 @@
         />
         <input
           type="button"
-          id="btnGenImg4"
+          id="btnGenImg5"
           class="btnGenImg"
           data-key="cats"
           value="Cats"
         />
+        <input
+          type="button"
+          id="btnGenImg6"
+          class="btnGenImg"
+          data-key="dogs"
+          value="Dogs"
+        />
       </div>
-
-      <div class="image-container">
-        <img src="https://placekitten.com/500/500" alt="" />
+      <!-- Image Display -->
+      <div class="image-display">
+        <!-- <img src="https://placekitten.com/500/500" alt="" /> -->
+        <div class="placeholder">
+          <span class="material-symbols-outlined"> filter </span>
+          <p>Pick one of the categories above</p>
+        </div>
       </div>
     </section>
   </body>
