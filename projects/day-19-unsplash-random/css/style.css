@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: var(--ffamily-main);
   color: var(--clr-font-main);
@@ -62,4 +67,36 @@ body {
 .logo h1 span {
   font-size: 4rem;
   color: var(--clr-neon);
+}
+
+/* Main */
+.main {
+  max-width: 114rem;
+  min-width: 32rem;
+  width: 100%;
+  margin: 4rem auto;
+}
+
+.btnGenImg {
+  width: 16rem;
+  height: auto;
+
+  font: 1.8rem var(--ffamily-main);
+  color: inherit;
+
+  background: transparent;
+  border-radius: 5rem;
+
+  cursor: pointer;
+}
+
+.image-container {
+  width: 50rem;
+  aspect-ratio: 1;
+
+  margin: 2rem auto;
+
+  border: 1px solid;
+
+  display: flex;
 }
