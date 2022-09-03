@@ -17,7 +17,7 @@ function renderImg(attr) {
       const fetchedImage = response.url
       console.log(fetchedImage)
       imgContainer.innerHTML = `
-        <img class="fetched-image" src="${fetchedImage}" alt="${attr}">
+        <img src="${fetchedImage}" alt="${attr}">
       `
     })
     .catch(err => console.log(`Error: ${err}`))
