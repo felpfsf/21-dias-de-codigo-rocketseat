@@ -25,6 +25,7 @@ export async function render() {
   })
 }
 
+// Copy to clipboard function
 function showTooltip(emojieCopy) {
   Toastify({
     text: `${emojieCopy} copied to clipboard`,
