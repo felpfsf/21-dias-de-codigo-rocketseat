@@ -4,7 +4,7 @@ const emojieDiv = document.querySelector('#emojieDiv')
 
 export async function render() {
   const emojies = await getEmojies()
-  console.log(emojies)
+  // console.log(emojies)
 
   emojieDiv.innerHTML = emojies
     ?.map(emojie => renderEmojieCard(emojie))
