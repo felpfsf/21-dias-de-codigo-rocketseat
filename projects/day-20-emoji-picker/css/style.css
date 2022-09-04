@@ -95,8 +95,8 @@ body {
 
   margin: 0 auto;
 
-  padding: .8rem;
-  
+  padding: 0.8rem;
+
   border: 1px solid;
   border-radius: 2rem;
 
@@ -106,11 +106,20 @@ body {
   display: grid;
   grid-template-rows: 2fr 1fr;
   justify-items: center;
+
+  transition: all ease-in-out .2s;
 }
 
 .emoji-char {
   font-size: 4rem;
   cursor: pointer;
+}
+
+.emoji-card:hover {
+  box-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
+    0 0 2.2rem #bc13fe, 0 0 1.2rem #bc13fe, 0 0 2.2rem #bc13fe,
+    0 0 1rem #bc13fe, 0 0 1.5rem #bc13fe;;
+  transform: scale(1.05);
 }
 
 .unicode-name {
@@ -131,7 +140,7 @@ body {
 
 .tooltip-text::before {
   content: '';
-  border: .5rem solid #fff;
+  border: 0.5rem solid #fff;
   position: absolute;
   top: 80%;
   left: 45%;
