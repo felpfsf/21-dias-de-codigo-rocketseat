@@ -43,9 +43,3 @@ export function renderEmojieCard(emojie) {
     </div>
   `
 }
-
-// export function renderEmojieCard(emojie) {
-//   let newEl = document.createElement('div')
-//   newEl.setAttribute('class', 'emoji-card')
-//   newEl.innerHTML += `<span class="emoji-char">${emojie.character}</span>`
-// }
