@@ -25,10 +25,10 @@
 
       <nav class="nav">
         <ul class="nav-menu" data-visible="false">
-          <li>Works</li>
-          <li>Services</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Projeto</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -36,14 +36,31 @@
       <div class="hero-info">
         <h1>Olá! Eu sou Felipe Ferreira, sou desenvolvedor Font-End.</h1>
         <h2>Trabalho com o desenvolvimento de websites, web-apps e mais.</h2>
-        <h2>Esta é uma apresentação dos <strong>#21diasdecodigo</strong>, desafio proposto pela <a href="https://www.rocketseat.com.br/" target="_blank" rel="noopener noreferrer"> Rocketseat</a> e <a href="https://www.twitch.tv/jakeliny" target="_blank" rel="noopener noreferrer">Jakeliny Gracielly</a></h2>
+        <h2>
+          Esta é uma apresentação dos <strong>#21diasdecodigo</strong>, desafio
+          proposto pela
+          <a
+            href="https://www.rocketseat.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Rocketseat</a
+          >
+          e
+          <a
+            href="https://www.twitch.tv/jakeliny"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Jakeliny Gracielly</a
+          >
+        </h2>
       </div>
       <img src="https://github.com/felpfsf.png" alt="profile pic" />
     </section>
-    <section class="about">
-      <div class="about-content">
-        <h2>Sobre Mim</h2>
-        <p>
+    <section id="about" class="glass-bg section-wrapper">
+      <div class="content-wrapper">
+        <h2 class="about-title">Sobre Mim</h2>
+        <p class="about-info">
           Desde 2007 atuei como webdesigner em empresas e como freelancer,
           desenvolvendo hot-sites para instituição de ensino, blogs e páginas de
           apresentação para diversos clientes. Nesse mesmo ano ingressei na
@@ -64,9 +81,9 @@
         </p>
       </div>
     </section>
-    <section class="skills">
-      <div class="skills-content">
-        <h2>Habilidades</h2>
+    <section id="skills" class="section-wrapper">
+      <div class="content-wrapper">
+        <h2 class="skills-title">Habilidades</h2>
         <div class="skills-cards">
           <!-- Skill Card -->
           <div class="skill-card">
@@ -91,10 +108,7 @@
           <!-- Skill Card -->
           <div class="skill-card">
             <div class="skill-img">
-              <img
-                src="https://styled-components.com/logo.png"
-                alt=""
-              />
+              <img src="https://styled-components.com/logo.png" alt="" />
             </div>
             <h3 class="skill-tag">Styled Components</h3>
           </div>
@@ -132,10 +146,10 @@
         </div>
       </div>
     </section>
-    <section class="projects">
-      <div class="projects-content">
-        <h2>Projetos</h2>
-        <h3>
+    <section id="projects" class="glass-bg section-wrapper">
+      <div class="content-wrapper">
+        <h2 class="projects-title">Projetos</h2>
+        <h3 class="projects-info">
           This is the landing page of the #21diasdecodigo, an event promoted by
           Rocketseat.
         </h3>
@@ -442,9 +456,14 @@
         <div class="card">
           <h1>Day #21</h1>
           <h2>Is this the End ...</h2>
-          <p>Or is it just the beggining? The last day is to create the portfolio and tell about yourself, your exp and show all the 20 days of code.</p>
+          <p>
+            Or is it just the beggining? The last day is to create the portfolio
+            and tell about yourself, your exp and show all the 20 days of code.
+          </p>
           <div class="footer-card">
-            <a href="https://github.com/felpfsf/21-dias-de-codigo-rocketseat/" target="_blank"
+            <a
+              href="https://github.com/felpfsf/21-dias-de-codigo-rocketseat/"
+              target="_blank"
               >Deploy</a
             >
             <a
@@ -456,5 +475,27 @@
         </div>
       </div>
     </section>
+    <section id="contact" class="section-wrapper">
+      <div class="content-wrapper">
+        <h2>Contato</h2>
+        <h3>Entre em contato comigo nas redes sociais</h3>
+
+        <div class="social">
+          <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/felipefsf/"><i class="ph-linkedin-logo"></i></a></li>
+            <li><a href="https://github.com/felpfsf"><i class="ph-github-logo"></i></a></li>
+            <li><a href="https://www.instagram.com/fs.ferreira/?theme=dark"><i class="ph-instagram-logo"></i></a></li>
+            <li><a href="https://twitter.com/felpfsf_dev"><i class="ph-twitter-logo"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="section-wrapper">
+      <div class="content-wrapper footer-content">
+        <h2>Desenvolvido com 💜 por <a href="https://www.linkedin.com/in/felipefsf/">Felipe Ferreira</a>
+          <h3>Todos os direitos reservados - 2022</h3>
+        </h2>
+      </div>
+    </footer>
   </body>
 </html>
