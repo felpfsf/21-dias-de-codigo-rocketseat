@@ -23,6 +23,11 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   width: 100vw;
   font-size: 1.6rem;
@@ -31,7 +36,7 @@ body {
   /* background: #000
     url(https://www.myfreewalls.com/public/uploads/preview/hd-dark-abstract-gaming-color-mobile-wallpaper-11631140632fnxjwka8sf.jpg); */
   background: #000 url(../images/wallpaperbetter.jpg);
-  background-size: cover;
+  background-size: contain;
 
   overflow-x: hidden;
 }
@@ -56,10 +61,19 @@ header {
 
 .logo {
   margin: 2rem;
+  /* text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
+    0 0 4.2rem #bc13fe, 0 0 8.2rem #bc13fe, 0 0 9.2rem #bc13fe,
+    0 0 10rem #bc13fe, 0 0 15rem #bc13fe; */
+  transition: all ease-in-out 0.3s;
+}
+
+.logo:hover {
   text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
     0 0 4.2rem #bc13fe, 0 0 8.2rem #bc13fe, 0 0 9.2rem #bc13fe,
     0 0 10rem #bc13fe, 0 0 15rem #bc13fe;
 }
+
+/* Nav */
 
 .nav {
   display: flex;
@@ -92,7 +106,7 @@ header {
   width: 15%;
   height: 0.2rem;
 
-  background-color: burlywood;
+  background-color: white;
 
   transform-origin: right;
   transform: scaleX(0);
@@ -104,7 +118,123 @@ header {
   transform: scaleX(1);
 }
 
-/*  */
+/* Hero */
+
+.hero {
+  margin: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero img {
+  width: 32rem;
+
+  padding: 0.2rem;
+
+  border-radius: 50%;
+  border: 0.2rem solid #bc13fe;
+}
+
+.hero-info {
+  width: 50%;
+}
+
+.hero-info:first-child{
+  font-size: 4rem;
+}
+
+.hero-info h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* About */
+
+.about {
+  width: 100%;
+  height: auto;
+
+  margin: 4rem auto;
+
+  background: hsl(271 76% 53% / 0.2);
+  backdrop-filter: blur(0.5rem);
+
+  display: flex;
+  align-items: center;
+}
+
+.about-content {
+  width: 80%;
+
+  margin: 0 auto;
+
+  padding: 2rem;
+}
+
+.about-content h2 {
+  font-size: 3.2rem;
+}
+
+.about-content p {
+  margin-top: 2rem;
+  font-family: var(--ff-inter);
+  line-height: 1.8;
+}
+
+/* Skills */
+
+.skills {
+  width: 100%;
+  margin: 4rem auto;
+
+  /* background: hsl(271 76% 53% / 0.2);
+  backdrop-filter: blur(0.5rem); */
+}
+
+.skills-content {
+  width: 80%;
+
+  margin: 0 auto;
+
+  padding: 2rem;
+}
+
+.skills-content h2 {
+  font-size: 3.2rem;
+}
+
+.skills-cards {
+  margin: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.skill-card {
+  width: 10.5rem;
+
+  display: grid;
+
+  grid-template-rows: 2fr 1fr;
+  justify-items: center;
+  place-items: center;
+}
+
+.skill-img {
+  width: 10.5rem;
+  aspect-ratio: 1;
+}
+
+.skill-tag {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/* Main Section */
+
 .main {
   /* max-width: 144rem; */
 
@@ -135,6 +265,7 @@ header {
   text-align: center;
 }
 
+/* #21diasdecodigo Cards */
 .cards {
   margin: 2rem;
   display: flex;
@@ -181,7 +312,12 @@ header {
     0 0 10rem #bc13fe, 0 0 15rem #bc13fe;
 }
 
+/* Media */
+
 @media (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
   .nav-menu {
     position: fixed;
     z-index: 9;
@@ -203,6 +339,11 @@ header {
 
   .nav-menu li {
     padding: 1.6rem;
+    position: relative;
+  }
+
+  .nav-menu li::before {
+    width: 75%;
   }
 
   .mobile-toggle {
