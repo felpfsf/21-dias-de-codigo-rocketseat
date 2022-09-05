@@ -72,6 +72,37 @@ html {
   backdrop-filter: blur(0.5rem);
 }
 
+/* Scroll to the top button */
+
+.scroll-top-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 0.2s;
+}
+.scroll-top-btn.isVisible {
+  opacity: 0.5;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top-btn i {
+  font-size: 8rem;
+}
+
+.scroll-top-btn:hover {
+  opacity: 1;
+  text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
+    0 0 4.2rem var(--clr-neon), 0 0 8.2rem var(--clr-neon),
+    0 0 9.2rem var(--clr-neon), 0 0 10rem var(--clr-neon),
+    0 0 15rem var(--clr-neon);
+}
+
 /* Header */
 
 header {
@@ -390,6 +421,8 @@ header {
   .content-wrapper {
     width: 100%;
   }
+
+  /* Nav menu */
 
   .nav-menu {
     position: fixed;
