@@ -2,7 +2,6 @@ const navToggle = document.querySelector('.mobile-toggle')
 const navMenu = document.querySelector('.nav-menu')
 const navMenuLinks = document.querySelectorAll('.nav-menu a')
 const btnScrollToTheTop = document.querySelector('#btnScrollToTheTop')
-console.log(btnScrollToTheTop);
 
 window.addEventListener('scroll', scrollToTheTop)
 
