@@ -218,6 +218,7 @@ header {
 
 .skills-cards {
   margin: 4rem;
+
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -241,6 +242,7 @@ header {
 
 .skill-tag {
   width: 100%;
+
   text-align: center;
   font-size: 1.4rem;
 }
@@ -311,6 +313,15 @@ header {
   margin: 4rem;
 }
 
+.contact-title {
+  font-size: 3.2rem;
+}
+
+.contact-info {
+  font-size: clamp(1.4rem, 0.7457rem + 0.5517vw, 1.8rem);
+  font-weight: 300;
+}
+
 .social-links {
   flex-wrap: wrap;
   gap: 2rem;
@@ -318,6 +329,10 @@ header {
   justify-content: space-evenly;
 
   transition: all ease-in 0.2s;
+}
+
+.social-links i {
+  font-size: clamp(4rem, 1.2069rem + 5.5172vw, 8rem);
 }
 
 .social-links li:hover {
@@ -333,14 +348,14 @@ header {
   margin: 0 auto;
 }
 
-.footer-content :nth-child(n){
+.footer-content :nth-child(n) {
   font-size: 1.8rem;
   text-align: center;
   font-weight: 300;
 }
 
-.footer-content :nth-child(2){
-  margin-top: .4rem;
+.footer-content :nth-child(2) {
+  margin-top: 0.4rem;
   font-size: 1.4rem;
 }
 
@@ -462,5 +477,9 @@ header {
     display: grid;
     grid-template-rows: 0.5fr 0.5fr 1fr 2rem;
     row-gap: 1.6rem;
+  }
+
+  .section-wrapper {
+    margin: 0 auto;
   }
 }
