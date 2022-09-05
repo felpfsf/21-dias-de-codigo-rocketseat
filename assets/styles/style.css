@@ -5,9 +5,14 @@
 }
 
 :root {
-  font-size: 10px;
+  --clr-font-main: hsl(208, 100%, 97%);
+  --clr-hover: hsl(271, 76%, 53%);
+  --clr-glass: hsl(271 76% 53% / 0.2);
+  --clr-neon: #bc13fe;
+
   --ff-poppins: 'Poppins';
   --ff-inter: 'Inter';
+  font-size: 10px;
 }
 
 a {
@@ -21,6 +26,8 @@ i {
 
 ul {
   list-style: none;
+
+  display: flex;
 }
 
 img {
@@ -28,23 +35,47 @@ img {
   height: 100%;
 }
 
-body {
+body,
+html {
   width: 100vw;
+
   font-size: 1.6rem;
   font-family: var(--ff-poppins);
-  color: aliceblue;
-  /* background: #000
-    url(https://www.myfreewalls.com/public/uploads/preview/hd-dark-abstract-gaming-color-mobile-wallpaper-11631140632fnxjwka8sf.jpg); */
+  color: var(--clr-font-main);
+
   background: #000 url(../images/wallpaperbetter.jpg);
   background-size: contain;
+
+  scroll-behavior: smooth;
 
   overflow-x: hidden;
 }
 
+/* Utility Class */
+
+.section-wrapper {
+  width: 100%;
+
+  margin: 4rem auto;
+}
+
+.content-wrapper {
+  width: 80%;
+
+  margin: 0 auto;
+
+  padding: 2rem;
+}
+
+.glass-bg {
+  background: hsl(271 76% 53% / 0.2);
+  backdrop-filter: blur(0.5rem);
+}
+
+/* Header */
+
 header {
   margin-inline: auto;
-
-  /* background: blueviolet; */
 
   display: flex;
   align-items: center;
@@ -53,24 +84,29 @@ header {
 
 .mobile-toggle {
   display: none;
-  background: transparent;
-  border: none;
+
   color: inherit;
+
+  background: transparent;
+
+  border: none;
+
   cursor: pointer;
 }
 
 .logo {
   margin: 2rem;
   /* text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
-    0 0 4.2rem #bc13fe, 0 0 8.2rem #bc13fe, 0 0 9.2rem #bc13fe,
-    0 0 10rem #bc13fe, 0 0 15rem #bc13fe; */
+    0 0 4.2rem var(--clr-neon), 0 0 8.2rem var(--clr-neon), 0 0 9.2rem var(--clr-neon),
+    0 0 10rem var(--clr-neon), 0 0 15rem var(--clr-neon); */
   transition: all ease-in-out 0.3s;
 }
 
 .logo:hover {
   text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
-    0 0 4.2rem #bc13fe, 0 0 8.2rem #bc13fe, 0 0 9.2rem #bc13fe,
-    0 0 10rem #bc13fe, 0 0 15rem #bc13fe;
+    0 0 4.2rem var(--clr-neon), 0 0 8.2rem var(--clr-neon),
+    0 0 9.2rem var(--clr-neon), 0 0 10rem var(--clr-neon),
+    0 0 15rem var(--clr-neon);
 }
 
 /* Nav */
@@ -84,10 +120,9 @@ header {
   position: relative;
   /* margin-inline: 4rem; */
 
-  background: hsl(271 76% 53% / 0.2);
+  background: var(--clr-glass);
   backdrop-filter: blur(1rem);
 
-  display: flex;
   align-items: center;
   gap: 2rem;
 }
@@ -159,38 +194,17 @@ header {
 
 .hero-info a:hover {
   text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
-    0 0 4.2rem #bc13fe, 0 0 8.2rem #bc13fe, 0 0 9.2rem #bc13fe,
-    0 0 10rem #bc13fe, 0 0 15rem #bc13fe;
+    0 0 4.2rem var(--clr-neon), 0 0 8.2rem var(--clr-neon),
+    0 0 9.2rem var(--clr-neon), 0 0 10rem var(--clr-neon),
+    0 0 15rem var(--clr-neon);
 }
 
 /* About */
-
-.about {
-  width: 100%;
-  height: auto;
-
-  margin: 4rem auto;
-
-  background: hsl(271 76% 53% / 0.2);
-  backdrop-filter: blur(0.5rem);
-
-  display: flex;
-  align-items: center;
-}
-
-.about-content {
-  width: 80%;
-
-  margin: 0 auto;
-
-  padding: 2rem;
-}
-
-.about-content h2 {
+.about-title {
   font-size: 3.2rem;
 }
 
-.about-content p {
+.about-info {
   margin-top: 2rem;
   font-family: var(--ff-inter);
   line-height: 1.8;
@@ -198,23 +212,7 @@ header {
 
 /* Skills */
 
-.skills {
-  width: 100%;
-  margin: 4rem auto;
-
-  /* background: hsl(271 76% 53% / 0.2);
-  backdrop-filter: blur(0.5rem); */
-}
-
-.skills-content {
-  width: 80%;
-
-  margin: 0 auto;
-
-  padding: 2rem;
-}
-
-.skills-content h2 {
+.skills-title {
   font-size: 3.2rem;
 }
 
@@ -249,29 +247,11 @@ header {
 
 /* Projects Section */
 
-.projects {
-  width: 100%;
-
-  margin: 4rem auto;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.projects-content {
-  width: 80%;
-
-  margin: 0 auto;
-
-  padding: 2rem;
-}
-
-.projects-content h2 {
+.projects-title {
   font-size: 3.2rem;
 }
 
-.projects-content h3 {
+.projects-info {
   font-size: clamp(1.4rem, 0.7457rem + 0.5517vw, 1.8rem);
   font-weight: 300;
 }
@@ -280,6 +260,7 @@ header {
 .cards {
   width: 100%;
   margin: 2rem auto;
+  padding-bottom: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -320,8 +301,61 @@ header {
 
 .card a:hover {
   text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
-    0 0 4.2rem #bc13fe, 0 0 8.2rem #bc13fe, 0 0 9.2rem #bc13fe,
-    0 0 10rem #bc13fe, 0 0 15rem #bc13fe;
+    0 0 4.2rem var(--clr-neon), 0 0 8.2rem var(--clr-neon),
+    0 0 9.2rem var(--clr-neon), 0 0 10rem var(--clr-neon),
+    0 0 15rem var(--clr-neon);
+}
+
+/* Contato */
+.social {
+  margin: 4rem;
+}
+
+.social-links {
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+
+  transition: all ease-in 0.2s;
+}
+
+.social-links li:hover {
+  text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
+    0 0 4.2rem var(--clr-neon), 0 0 8.2rem var(--clr-neon),
+    0 0 9.2rem var(--clr-neon), 0 0 10rem var(--clr-neon),
+    0 0 15rem var(--clr-neon);
+}
+
+/* Footer */
+
+.section-wrapper {
+  margin: 0 auto;
+}
+
+.footer-content :nth-child(n){
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.footer-content :nth-child(2){
+  margin-top: .4rem;
+  font-size: 1.4rem;
+}
+
+.footer-content h2 a {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+
+  transition: all ease-in 0.2s;
+}
+
+.footer-content h2 a:hover {
+  text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
+    0 0 4.2rem var(--clr-neon), 0 0 8.2rem var(--clr-neon),
+    0 0 9.2rem var(--clr-neon), 0 0 10rem var(--clr-neon),
+    0 0 15rem var(--clr-neon);
 }
 
 /* Media */
@@ -330,6 +364,18 @@ header {
   body {
     background-size: contain;
   }
+
+  /* Utility Class */
+
+  .section-wrapper {
+    width: 100%;
+    margin: 4rem auto;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
   .nav-menu {
     position: fixed;
     z-index: 9;
@@ -386,14 +432,7 @@ header {
     width: 100%;
   }
 
-  .about-content {
-    width: 100%;
-  }
-
   /* Skills */
-  .skills-content {
-    width: 100%;
-  }
 
   .skills-cards {
     margin: 2rem;
