@@ -38,7 +38,7 @@ It's not a contest but a challenge to make yourself acquire the habit to code ev
 - [x] [#18 - Create an application that generates random passwords](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-18-password-gen/)
 - [x] [#19 - Develop an web application that generates random images from Unsplash API](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-19-unsplash-random/)
 - [x] [#20 - Develop an web application that displays emoji and allow it to copy when clicked](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/tree/master/projects/day-20-emoji-picker/)
-- [ ] [#21]()
+- [ ] [#21 - Make a Portfolio](https://github.com/felpfsf/21-dias-de-codigo-rocketseat/)
 
 ## Hashtags
 
