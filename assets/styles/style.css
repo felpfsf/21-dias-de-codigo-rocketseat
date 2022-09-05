@@ -140,12 +140,13 @@ header {
   width: 50%;
 }
 
-.hero-info:first-child{
-  font-size: 4rem;
+.hero-info:first-child {
+  font-size: clamp(1.8rem, 0.4138rem + 3.0345vw, 4rem);
 }
 
 .hero-info h2 {
-  font-size: 2rem;
+  margin-top: 0.4rem;
+  font-size: clamp(1.6rem, 0.8707rem + 0.5517vw, 2rem);
   font-weight: 500;
 }
 
@@ -235,31 +236,33 @@ header {
 
 /* Main Section */
 
-.main {
-  /* max-width: 144rem; */
+.projects {
+  width: 100%;
 
-  padding: 2rem;
+  /* padding: 2rem; */
 
-  margin-inline: auto;
+  /* margin-inline: auto; */
+  margin: 4rem auto;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.content {
-  margin: 2rem;
+.projects-content {
+  width: 80%;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
 }
 
-.content h1 {
+.projects-content h1 {
   font-size: 3.2rem;
 }
 
-.content h2 {
+.projects-content h2 {
   font-size: 1.8rem;
   font-weight: 300;
   text-align: center;
@@ -267,7 +270,8 @@ header {
 
 /* #21diasdecodigo Cards */
 .cards {
-  margin: 2rem;
+  width: 100%;
+  margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -346,11 +350,51 @@ header {
     width: 75%;
   }
 
+  .logo {
+    margin: 2rem;
+    text-shadow: 0 0 0.7rem #fff, 0 0 1rem #fff, 0 0 2.1rem #fff,
+      0 0 4.2rem #bc13fe, 0 0 8.2rem #bc13fe, 0 0 9.2rem #bc13fe,
+      0 0 10rem #bc13fe, 0 0 15rem #bc13fe;
+    transition: all ease-in-out 0.3s;
+  }
+
   .mobile-toggle {
     display: block;
     position: absolute;
     z-index: 10;
     right: 2rem;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero img {
+    width: 24.6rem;
+  }
+
+  .hero-info {
+    width: 100%;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  /* Skills */
+  .skills-content {
+    width: 100%;
+  }
+
+  .skills-cards {
+    margin: 2rem;
+    row-gap: 4rem;
+  }
+
+  /* 21diasdecodigo cards */
+  .cards {
+    width: 90%;
   }
 
   .card {
